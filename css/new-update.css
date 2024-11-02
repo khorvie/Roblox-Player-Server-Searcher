@@ -1,0 +1,97 @@
+@font-face {
+    font-family: "Inter Black";
+    src: url("chrome-extension://__MSG_@@extension_id__/resources/fonts/Inter-Black.ttf");
+}
+
+@font-face {
+    font-family: "Inter ExtraBold";
+    src: url("chrome-extension://__MSG_@@extension_id__/resources/fonts/Inter-ExtraBold.ttf");
+}
+
+@font-face {
+    font-family: "Inter SemiBold";
+    src: url("chrome-extension://__MSG_@@extension_id__/resources/fonts/Inter-SemiBold.ttf");
+}
+
+@font-face {
+    font-family: "Inter Regular";
+    src: url("chrome-extension://__MSG_@@extension_id__/resources/fonts/Inter-Regular.ttf");
+}
+
+
+
+#RPSS-ACU-Container {
+    width: 574px;
+    height: 409px;
+    background-color: #0D1117;
+    border: 3px solid #ffffff;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    z-index: 1050;
+    top: 50%;
+    left: 50%;
+}
+
+#RPSS-ACU-Container span {
+    color: white;
+    display: table;
+    margin: 0 auto;
+}
+
+#RPSS-ACU-Close {
+    position: relative;
+    color: #828282;
+    width: 14px;
+    height: 14px;
+    top: 10px;
+    right: 10px;
+    float: right;
+    cursor: pointer;
+}
+
+#RPSS-ACU-Name {
+    position: relative;
+    font-family: "Inter Black";
+    font-size: 32px;
+    top: 50px;
+    left: 7px;
+}
+
+#RPSS-ACU-Available {
+    position: relative;
+    font-family: "Inter ExtraBold";
+    font-size: 27px;
+    top: 80px;
+}
+
+#RPSS-ACU-Versions {
+    display: flex;
+    position: relative;
+    top: 130px;
+}
+
+.RPSS-ACU-Version {
+    flex: 1;
+}
+
+.RPSS-ACU-Version span:nth-child(1) {
+    font-family: "Inter SemiBold";
+    font-size: 25px;
+}
+
+.RPSS-ACU-Version span:nth-child(2) {
+    font-family: "Inter Regular";
+    margin-top: 20px !important;
+    font-size: 24px;
+}
+
+#RPSS-ACU-Update {
+    position: relative;
+    font-family: "Inter SemiBold";
+    font-size: 24px;
+    color: #2F81F7;
+    top: 200px;
+    text-decoration: underline;
+    display: table;
+    margin: 0 auto;
+}

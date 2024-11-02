@@ -1,0 +1,136 @@
+@font-face {
+    font-family: "Inter Bold";
+    src: url("chrome-extension://__MSG_@@extension_id__/resources/fonts/Inter-Bold.ttf");
+}
+
+
+#RPSS-Joining-Container {
+    width: 398px;
+    height: 235px;
+    background-color: #131518;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#RPSS-Joining-Avatar {
+    width: 73px;
+    height: 73px;
+    border-radius: 5px;
+    border: 3px solid rgba(0, 132, 227, 0.5);
+    margin-bottom: 27px;
+    position: relative;
+}
+
+#RPSS-Joining-Username {
+    color: white;
+    font-size: 24px;
+    margin-bottom: 5px;
+    font-family: "Inter Bold";
+}
+
+#RPSS-Joining-Container span:not(#RPSS-Joining-Username) {
+    display: none;
+    color: white;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-family: "Inter Bold";
+}
+
+#RPSS-Joining-Loading {
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 5px;
+    border-radius: 50%;
+    background-color: rgba(0, 132, 227, 0.75);
+}
+
+#RPSS-Joining-Loading .dot:nth-child(1) {
+    animation: loading1 2s linear infinite;
+}
+
+#RPSS-Joining-Loading .dot:nth-child(2) {
+    animation: loading2 2s linear infinite;
+}
+
+#RPSS-Joining-Loading .dot:nth-child(3) {
+    animation: loading3 2s linear infinite;
+}
+
+@keyframes loading1 {
+    100%,
+    66.66% {
+        opacity: 0.5;
+    }
+
+    33.33% {
+        opacity: 1;
+    }
+
+    0% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes loading2 {
+    0%,
+    100% {
+        opacity: 0.5;
+    }
+
+    66.66% {
+        opacity: 1;
+    }
+
+    33.33% {
+        opacity: 0.5;
+    }
+}
+
+@keyframes loading3 {
+    33.33%,
+    0% {
+        opacity: 0.5;
+    }
+
+    0% {
+        opacity: 1;
+    }
+
+    66.66% {
+        opacity: 0.5;
+    }
+}
+
+
+
+.RPSS-Joining-StageTwo #modal-dialog .modal-content {
+    background-color: #131518;
+}
+
+.RPSS-Joining-StageTwo .close:nth-child(1) .icon-close {
+    background-image: url("https://images.rbxcdn.com/a057a8bc94e7ab78517765ddb4e77384-generic_dark_11062018.svg");
+}
+
+.RPSS-Joining-StageTwo .modal-message span {
+    background-image: url("chrome-extension://__MSG_@@extension_id__/resources/svg/white-roblox-icon.svg");
+}
+
+.RPSS-Joining-StageTwo .modal-message p {
+    color: #bdbebe;
+}
+
+.RPSS-Joining-StageTwo #confirm-btn {
+    background-color: #fff;
+    border-color: #fff;
+    color: #393b3d;
+}

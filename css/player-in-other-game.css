@@ -1,0 +1,143 @@
+@font-face {
+    font-family: "Inter Bold";
+    src: url("chrome-extension://__MSG_@@extension_id__/resources/fonts/Inter-Bold.ttf");
+}
+
+
+#RPSS-PIOG-Container {
+    top: 50%;
+    left: 50%;
+    width: 500px;
+    height: 295px;
+    z-index: 1051;
+    display: flex;
+    position: fixed;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #131518;
+    transform: translate(-50%, -50%);
+}
+
+#RPSS-PIOG-Container > div:first-child {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#RPSS-PIOG-Title {
+    color: #D7D7D7;
+    position: relative;
+    font-family: "Inter Bold";
+    margin-bottom: 8px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#RPSS-PIOG-Title div {
+    font-size: 24px;
+    display: flex;
+    align-items: flex-end;
+}
+
+#RPSS-PIOG-Avatar {
+    width: 37px;
+    height: 37px;
+    border-radius: 50%;
+    border: 2px solid rgba(0, 132, 227);
+    position: relative;
+}
+
+#RPSS-PIOG-Username {
+    color: #0084E3;
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#RPSS-PIOG-InCustomServer {
+    font-size: 16px;
+    color: #DB0000;
+    visibility: hidden;
+}
+
+#RPSS-PIOG-Game {
+    display: flex;
+    position: relative;
+    align-items: flex-end;
+    justify-content: center;
+    border: 2px solid rgba(0, 132, 227, 0.5);
+    margin-bottom: 26px;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#RPSS-PIOG-GameIcon {
+    width: 100px;
+    height: 100px;
+    border-radius: 5px;
+}
+
+#RPSS-PIOG-GameTitle {
+    width: 280px;
+    padding: 2px;
+    font-size: 22px;
+    margin-left: 8px;
+    color: white;
+    overflow: hidden;
+    display: inline-block;
+    text-overflow: ellipsis;
+    font-family: "Inter Bold";
+}
+
+#RPSS-PIOG-BtnContainer button {
+    width: 90px;
+    height: 39px;
+    font-size: 20px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: "Inter Bold";
+    background-color: #00AD07;
+}
+
+#RPSS-PIOG-RedBtn {
+    margin-left: 160px;
+    background-color: #AD0000 !important;
+}
+
+#RPSS-PIOG-Background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1049;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+
+
+#RPSS-PIOG-CS-Title {
+    font-size: 20px;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Inter Bold";
+    color: #DB0000;
+}
+
+#RPSS-PIOG-CS-Explain {
+    width: 400px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    color: white;
+    font-family: "Inter Bold";
+}
+
+#RPSS-PIOG-CS-Explain div span:not(:first-child) {
+    display: block;
+    font-size: 11px;
+    opacity: 0.75;
+}
